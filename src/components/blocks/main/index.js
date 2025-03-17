@@ -7,9 +7,9 @@ const Main = () => {
     console.log("Button clicked!");
   };
   return (
-    <main className={styles.container}>
+    <main className={styles.main}>
       <div className={styles.wrapper}>
-        <h3>{MAIN_CONTENT.title}</h3>
+        <h1>{MAIN_CONTENT.title}</h1>
       </div>
       <div className={styles.descriptionButton}>
         <p >{MAIN_CONTENT.description}</p>

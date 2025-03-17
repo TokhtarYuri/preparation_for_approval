@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./SliderProblems.module.css";
 import { PROBLEMS_CONTENT } from "../../../constants/text";
 
@@ -98,6 +98,14 @@ const SliderProblems = () => {
             prevSlide();
         }
     };
+
+/*     useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
+        }, 1000);
+    
+        return () => clearInterval(interval);
+    }, [data.length]); */
 
     return (
         <div className={styles.sliderContainer}>
