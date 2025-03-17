@@ -1,0 +1,14 @@
+.button {
+  background-color: #008CFF;
+  color: white;
+  padding: 15px 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 29px;
+  font-weight: 500;
+  line-height: 33px;
+  border-radius: 5px;
+  font-stretch: condensed;
+  box-shadow: 3px 3px 0px 0px rgb(0, 39, 98);
+  background: linear-gradient(205deg, rgb(79, 176, 255) -5.285%, rgb(0, 59, 164) 114.651%);
+}
