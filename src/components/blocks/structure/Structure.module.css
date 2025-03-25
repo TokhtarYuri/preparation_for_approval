@@ -1,0 +1,78 @@
+.container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: var(--black);
+    margin-top: 85px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-stretch: condensed;
+}
+
+
+.container h2 {
+    margin-bottom: 32px;
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 35px;
+    transform: scaleY(1.3);
+}
+
+.listItem {
+    margin-bottom: 20px;
+}
+
+.moduleHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+.moduleNumber {
+    width: 23%;
+    text-align: center;
+}
+
+.moduleNumber p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px;
+}
+
+.moduleTitle {
+    width: 70%;
+    text-align: center;
+}
+
+.moduleTitle p {
+    padding: 0 3px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 13px;
+    text-align: left;
+    transform: scaleY(1.2);
+}
+
+.plusButton {
+    width: 7%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.line {
+    margin: 15px 0;
+    border: 1px solid rgba(0, 140, 255, 0.5);
+}
+
+.imageContainer {
+    width: 100%;
+    height: 235px;
+    border-radius: 10px;
+    background: rgb(234, 234, 234);
+}

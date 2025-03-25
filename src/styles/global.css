@@ -1,102 +1,104 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  :root {
-    --primary-color: #33A3FF;
-    --secondary-color: #4FB0FF;
-    --accent-color: #008CFF;
-    --dark-color: #000621;
-    --gradient: linear-gradient(90deg, #003BA4, #4FB0FF);
-    --white: #fff;
-    --black: #000;
-  }
-  
-  body {
-    font-family: 'Open Sans Condensed', sans-serif;
-/*     background-color: #858585; */
-background: rgb(100, 101, 105);
-  }
-  
-  h1 {
-    font-family: 'Bebas Neue Cyrillic', sans-serif;
-    font-weight: 400;
-    font-size: 65px;
-    line-height: 65px;
-  }
-  
-  h2 {
-    font-family: 'Bebas Neue Cyrillic', sans-serif;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 64px;
-  }
-  
-  h3 {
-    font-family: 'Bebas Neue Cyrillic', sans-serif;
-    font-weight: 400;
-    font-size: 43px;
-    line-height: 43px;
-  }
-  
-  h4 {
-    font-family: 'Open Sans SemiCondensed', sans-serif;
-    font-weight: 600;
-    font-size: 29px;
-    line-height: 33px;
-  }
-  
-  p {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 20px;
-  }
-  
-  .text-bold {
-    font-weight: 700;
-  }
-  
-  .text-medium {
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 23px;
-  }
-  
-  .text-small {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16px;
-  }
-  
-  .text-large {
-    font-size: 32px;
-    line-height: 34px;
-  }
-  
-  .text-center {
-    text-align: center;
-  }
-  
-  .bg-primary {
-    background-color: var(--primary-color);
-  }
-  
-  .bg-gradient {
-    background: var(--gradient);
-  }
-  
-  .text-primary {
-    color: var(--primary-color);
-  }
-  
-  .text-secondary {
-    color: var(--secondary-color);
-  }
-  
-  .text-dark {
-    color: var(--dark-color);
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #33A3FF;
+  --secondary-color: #4FB0FF;
+  --accent-color: #008CFF;
+  --dark-color: #000621;
+  --dark-background: #010724;
+  --grey-background: #EDEDED;
+  --grey-line: #B3B3B3;
+  --gradient: linear-gradient(90deg, #003BA4, #4FB0FF);
+  --white: #fff;
+  --black: #000;
+}
+
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  /*     background-color: #858585; */
+  background: rgb(100, 101, 105);
+}
+
+h1 {
+  font-family: 'Bebas Neue Cyrillic', sans-serif;
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 65px;
+}
+
+h2 {
+  font-family: 'Bebas Neue Cyrillic', sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+h3 {
+  font-family: 'Bebas Neue Cyrillic', sans-serif;
+  font-weight: 400;
+  font-size: 43px;
+  line-height: 43px;
+}
+
+h4 {
+  font-family: 'Open Sans SemiCondensed', sans-serif;
+  font-weight: 600;
+  font-size: 29px;
+  line-height: 33px;
+}
+
+p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-medium {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 23px;
+}
+
+.text-small {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.text-large {
+  font-size: 32px;
+  line-height: 34px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-gradient {
+  background: var(--gradient);
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}

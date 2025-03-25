@@ -6,11 +6,11 @@
 }
 
 .main h3 {
-  margin: 38px 0 57px 0;
+  margin: 82px 0 34px 0;
   color: var(--white);
   font-family: "Bebas Neue Cyrillic", sans-serif;
   font-style: normal;
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 700;
   line-height: 34px;
   font-stretch: condensed;
@@ -22,3 +22,4 @@
   width: 100%;
   text-align: center;
 } 
+

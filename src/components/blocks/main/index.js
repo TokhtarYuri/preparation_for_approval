@@ -18,7 +18,7 @@ const Main = () => {
         <img src="/assets/images/radiobutton.svg" alt="Example" className={styles.image} />
         <div className={styles.content1}>
           <p className={styles.description}>
-            <span className={styles.coloredText}>{MAIN_CONTENT.paragraph_1}</span>{MAIN_CONTENT.paragraph_11}
+            <span className={"text-secondary"}>{MAIN_CONTENT.paragraph_1}</span>{MAIN_CONTENT.paragraph_11}
           </p>
         </div>
       </div>
@@ -26,7 +26,7 @@ const Main = () => {
         <img src="/assets/images/radiobutton.svg" alt="Example" className={styles.image} />
         <div className={styles.content2}>
           <p className={styles.description}>
-            <span className={styles.coloredText}>{MAIN_CONTENT.paragraph_2}</span> {MAIN_CONTENT.paragraph_21}
+            <span className={"text-secondary"}>{MAIN_CONTENT.paragraph_2}</span> {MAIN_CONTENT.paragraph_21}
           </p>
         </div>
       </div>
@@ -34,14 +34,14 @@ const Main = () => {
         <img src="/assets/images/radiobutton.svg" alt="Example" className={styles.image} />
         <div className={styles.content3}>
           <p className={styles.description}>
-            <span className={styles.coloredText}>{MAIN_CONTENT.paragraph_3}</span> {MAIN_CONTENT.paragraph_31}</p>
+            <span className={"text-secondary"}>{MAIN_CONTENT.paragraph_3}</span> {MAIN_CONTENT.paragraph_31}</p>
         </div>
       </div>
       <div className={styles.container}>
         <img src="/assets/images/radiobutton.svg" alt="Example" className={styles.image} />
         <div className={styles.content4}>
           <p className={styles.description}>
-            <span className={styles.coloredText}>{MAIN_CONTENT.paragraph_4}</span> {MAIN_CONTENT.paragraph_41}
+            <span className={"text-secondary"}>{MAIN_CONTENT.paragraph_4}</span> {MAIN_CONTENT.paragraph_41}
           </p>
         </div>
       </div>
