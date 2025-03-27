@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/preparation_for_approval/static/css/main.ed72cb30.css",
+    "main.css": "/preparation_for_approval/static/css/main.52707c22.css",
     "main.js": "/preparation_for_approval/static/js/main.f9343c25.js",
     "static/media/avatar-1.png": "/preparation_for_approval/static/media/avatar-1.af3f94c6483f69e7c477.png",
     "static/media/doctor-main.png": "/preparation_for_approval/static/media/doctor-main.4394f891a440a1af0a59.png",
@@ -23,11 +23,11 @@
     "static/media/practical-4.svg": "/preparation_for_approval/static/media/practical-4.7e2387c0a015cd6eb691d5ff9e23b946.svg",
     "static/media/arrow-slider.svg": "/preparation_for_approval/static/media/arrow-slider.3b62fb3f33b78b9e15ae0503ce7a731a.svg",
     "static/media/radiobutton.svg": "/preparation_for_approval/static/media/radiobutton.421416bb94b551814b4dbfeec97c38f0.svg",
-    "main.ed72cb30.css.map": "/preparation_for_approval/static/css/main.ed72cb30.css.map",
+    "main.52707c22.css.map": "/preparation_for_approval/static/css/main.52707c22.css.map",
     "main.f9343c25.js.map": "/preparation_for_approval/static/js/main.f9343c25.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed72cb30.css",
+    "static/css/main.52707c22.css",
     "static/js/main.f9343c25.js"
   ]
 }
