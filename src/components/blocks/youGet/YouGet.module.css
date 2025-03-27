@@ -9,24 +9,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-stretch: condensed;
 }
 
 
 .container h2 {
     margin: 3px 0 40px 0;
-    font-size: 42px;
+    font-size: 34px;
     font-weight: 600;
     line-height: 60px;
-    transform: scaleY(1.4);
+    transform: scaleY(1.6);
     color: var(--black);
 }
 
 .container h4 {
-    margin-top: -6px;
-    font-size: 33px;
+    margin-top: 19px;
+    font-size: 26px;
     font-weight: 600;
-    line-height: 34px;
+    line-height: 24px;
+    transform: scaleY(1.4);
     color: var(--black);
 }
 
@@ -42,15 +42,18 @@
 }
 
 .listItem p {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 18px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    transform: scaleY(1.2);
 }
 
 .itemTitle p {
-    font-size: 18px;
+    margin-bottom: 5px;
+    font-size: 15px;
     font-weight: 600;
     line-height: 22px;
+    transform: scaleY(1.2);
 }
 
 .image {
