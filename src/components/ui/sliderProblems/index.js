@@ -104,7 +104,7 @@ const SliderProblems = () => {
      useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
-        }, 1000);
+        }, 10000);
     
         return () => clearInterval(interval);
     }, [data.length]); 
