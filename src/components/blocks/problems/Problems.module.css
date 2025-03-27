@@ -13,12 +13,12 @@
   font-size: 32px;
   font-weight: 700;
   line-height: 34px;
-  font-stretch: condensed;
+  /*   font-stretch: condensed; */
   transform: scaleY(1.3);
 }
 
- .wrapper {
+.wrapper {
   display: inline-block;
   width: 100%;
   text-align: center;
-} 
+}

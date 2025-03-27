@@ -1,11 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./SliderExperts.module.css";
 import { EXPERTS_CONTENT } from "../../../constants/text";
+import LogoSRC from "../../../images/logo.svg"
+import Avatar1SRC from "../../../images/avatar-1.png"
+import ArrowSliderSRC from "../../../images/arrow-slider.svg"
 
 const expert_1 =
     <div className={styles.itemExpert}>
-        <img src="/assets/images/logo.svg" alt="Logo" className={styles.logo} />
-        <img src="/assets/images/avatar-1.png" alt="problems" className={styles.imageAvatar} />
+        <img src={LogoSRC} alt="Logo" className={styles.logo} />
+        <img src={Avatar1SRC} alt="problems" className={styles.imageAvatar} />
         <h4 className={styles.nameExpert}>{EXPERTS_CONTENT.name_1}</h4>
         <p>{EXPERTS_CONTENT.job_1}</p>
         <div className={styles.line}></div>
@@ -25,8 +28,8 @@ const expert_1 =
 
 const expert_2 =
     <div className={styles.itemExpert}>
-        <img src="/assets/images/logo.svg" alt="Logo" className={styles.logo} />
-        <img src="/assets/images/avatar-1.png" alt="problems" className={styles.imageAvatar} />
+        <img src={LogoSRC} alt="Logo" className={styles.logo} />
+        <img src={Avatar1SRC} alt="problems" className={styles.imageAvatar} />
         <h4 className={styles.nameExpert}>{EXPERTS_CONTENT.name_2}</h4>
         <p>{EXPERTS_CONTENT.job_2}</p>
         <div className={styles.line}></div>
@@ -98,13 +101,13 @@ const SliderExperts = () => {
         }
     };
 
-/*          useEffect(() => {
+          useEffect(() => {
             const interval = setInterval(() => {
                 setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
             }, 10000);
         
             return () => clearInterval(interval);
-        }, [data.length]);  */
+        }, [data.length]);  
 
     return (
         <div className={styles.sliderContainer}>
@@ -133,7 +136,7 @@ const SliderExperts = () => {
                 </div>
             
                 <div className={styles.arrow} onClick={prevSlide}></div>
-                <img src="/assets/images/arrow-slider.svg" alt="Logo" onClick={prevSlide} />
+                <img src={ArrowSliderSRC} alt="" onClick={prevSlide} />
 
             </div>
         </div>

@@ -1,3 +1,10 @@
+import Practical1SRC from "../images/practical-1.svg";
+import Practical2SRC from "../images/practical-2.svg";
+import Practical3SRC from "../images/practical-3.svg";
+import Practical4SRC from "../images/practical-4.svg";
+import Practical5SRC from "../images/practical-5.svg";
+
+
 export const MAIN_CONTENT = {
   title: "ПІДГОТОВКА ДО АПРОБАЦІЇ",
   description: "з гарантією працевлаштування в Чехії!",
@@ -172,27 +179,27 @@ export const PRACTICAL_APPROACH_CONTENT = {
   title_2: "ДО НАВЧАННЯ",
   list: [
     {
-      image: "/assets/images/practical-1.svg",
+      image: Practical1SRC,
       itemTitle: "Теоретична підготовка + 24/7 доступ до всіх необхідних матеріалів",
       item: "Усі лекції, навчальні матеріали та тестові питання доступні у будь-який час на онлайн-платформі",
     },
     {
-      image: "/assets/images/practical-2.svg",
+      image: Practical2SRC,
       itemTitle: "Живі практичні заняття",
       item: "Розбір клінічних кейсів, тестів та спілкування з наставниками – практикуючими лікарями Чехії",
     },
     {
-      image: "/assets/images/practical-3.svg",
+      image: Practical3SRC,
       itemTitle: "Симуляція іспитів / пробні іспити",
       item: "Реалістичні тренування для успішного складання тестової, практичної та усної частини апробації",
     },
     {
-      image: "/assets/images/practical-4.svg",
+      image: Practical4SRC,
       itemTitle: "Персональний куратор",
       item: "Супроводжує вас на всіх етапах підготовки, допомагає з документами та реєстрацією",
     },
     {
-      image: "/assets/images/practical-5.svg",
+      image: Practical5SRC,
       itemTitle: "Чат групи",
       item: "Обмін досвідом, підтримка від викладачів та інших учасників програми",
     },

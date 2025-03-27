@@ -1,5 +1,6 @@
 import styles from "./Structure.module.css";
 import { STRUCTURE_CONTENT } from "../../../constants/text";
+import PlusSRC from "../../../images/plus.svg"
 
 const Structure = () => {
     return (
@@ -20,7 +21,7 @@ const Structure = () => {
                                     <p>{item.moduleTitle}</p>
                                 </div>
                                 <div className={styles.plusButton}>
-                                    <img src="/assets/images/plus.svg" alt="plus" className={styles.image} />
+                                    <img src={PlusSRC} alt="plus" className={styles.image} />
                                 </div>
                             </div>
                             <div className={styles.line}></div>

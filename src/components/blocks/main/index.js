@@ -4,9 +4,10 @@ import Button from "../../ui/button";
 import ExampleSRC from "../../../images/radiobutton.svg"; 
 import DoctorSRC from "../../../images/doctor-main.png";
 const Main = () => {
+  
   const handleClick = () => {
-    console.log("Button clicked!");
   };
+
   return (
     <main className={styles.main}>
       <div className={styles.wrapper}>

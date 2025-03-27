@@ -1,5 +1,7 @@
 import styles from "./ParticipationFormat.module.css";
 import { PARTICIPATION_FORMAT_CONTENT } from "../../../constants/text";
+import CrossSRC from "../../../images/cross.svg"
+import CheckmarkSRC from "../../../images/checkmark.svg"
 
 const ParticipationFormat = () => {
     return (
@@ -22,12 +24,12 @@ const ParticipationFormat = () => {
                             <div className={styles.value}>
                                 <div className={styles.cross}>
                                     {!item.value && (
-                                        <img src="/assets/images/cross.svg" alt="cross" />
+                                        <img src={CrossSRC} alt="cross" />
                                     )}
                                 </div>
                                 <div className={styles.checkmark}>
                                     {item.value && (
-                                        <img src="/assets/images/checkmark.svg" alt="checkmark" />
+                                        <img src={CheckmarkSRC} alt="checkmark" />
                                     )}
                                 </div>
 
@@ -66,12 +68,12 @@ const ParticipationFormat = () => {
                             <div className={styles.value}>
                                 <div className={styles.cross}>
                                     {!item.value && (
-                                        <img src="/assets/images/cross.svg" alt="cross" />
+                                        <img src={CrossSRC} alt="cross" />
                                     )}
                                 </div>
                                 <div className={styles.checkmark}>
                                     {item.value && (
-                                        <img src="/assets/images/checkmark.svg" alt="checkmark" />
+                                        <img src={CheckmarkSRC} alt="checkmark" />
                                     )}
                                 </div>
 
@@ -110,12 +112,12 @@ const ParticipationFormat = () => {
                             <div className={styles.value}>
                                 <div className={styles.cross}>
                                     {!item.value && (
-                                        <img src="/assets/images/cross.svg" alt="cross" />
+                                        <img src={CrossSRC} alt="cross" />
                                     )}
                                 </div>
                                 <div className={styles.checkmark}>
                                     {item.value && (
-                                        <img src="/assets/images/checkmark.svg" alt="checkmark" />
+                                        <img src={CheckmarkSRC} alt="checkmark" />
                                     )}
                                 </div>
 

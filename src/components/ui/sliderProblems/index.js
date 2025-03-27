@@ -1,46 +1,48 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./SliderProblems.module.css";
 import { PROBLEMS_CONTENT } from "../../../constants/text";
+import ProblemsSRC from "../../../images/problems.png"
+import AnswerSRC from "../../../images/answer.png"
 
 
 const question_1 =
     <div className={styles.itemQuestion}>
-        <img src="/assets/images/problems.png" alt="problems" className={styles.imageProblem} />
+        <img src={ProblemsSRC} alt="problems" className={styles.imageProblem} />
         <h4>{PROBLEMS_CONTENT.title_problem_1}</h4>
         <p>{PROBLEMS_CONTENT.problem_1}</p>
     </div>
 
 const question_2 =
     <div className={styles.itemQuestion}>
-        <img src="/assets/images/problems.png" alt="problems" className={styles.imageProblem} />
+        <img src={ProblemsSRC} alt="problems" className={styles.imageProblem} />
         <h4>{PROBLEMS_CONTENT.title_problem_2}</h4>
         <p>{PROBLEMS_CONTENT.problem_2}</p>
     </div>
 
 const question_3 =
     <div className={styles.itemQuestion}>
-        <img src="/assets/images/problems.png" alt="problems" className={styles.imageProblem} />
+        <img src={ProblemsSRC} alt="problems" className={styles.imageProblem} />
         <h4>{PROBLEMS_CONTENT.title_problem_3}</h4>
         <p>{PROBLEMS_CONTENT.problem_3}</p>
     </div>
 
 const answer_1 =
     <div className={styles.itemAnswer}>
-        <img src="/assets/images/answer.png" alt="problems" className={styles.imageAnswer} />
+        <img src={AnswerSRC} alt="problems" className={styles.imageAnswer} />
         <h4>{PROBLEMS_CONTENT.title_solution}</h4>
         <p>{PROBLEMS_CONTENT.solution_1}</p>
     </div>
 
 const answer_2 =
     <div className={styles.itemAnswer}>
-        <img src="/assets/images/answer.png" alt="problems" className={styles.imageAnswer} />
+        <img src={AnswerSRC} alt="problems" className={styles.imageAnswer} />
         <h4>{PROBLEMS_CONTENT.title_solution}</h4>
         <p>{PROBLEMS_CONTENT.solution_2}</p>
     </div>
 
 const answer_3 =
     <div className={styles.itemAnswer}>
-        <img src="/assets/images/answer.png" alt="problems" className={styles.imageAnswer} />
+        <img src={AnswerSRC} alt="problems" className={styles.imageAnswer} />
         <h4>{PROBLEMS_CONTENT.title_solution}</h4>
         <p>{PROBLEMS_CONTENT.solution_3}</p>
     </div>
@@ -99,13 +101,13 @@ const SliderProblems = () => {
         }
     };
 
-/*     useEffect(() => {
+     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
         }, 1000);
     
         return () => clearInterval(interval);
-    }, [data.length]); */
+    }, [data.length]); 
 
     return (
         <div className={styles.sliderContainer}>

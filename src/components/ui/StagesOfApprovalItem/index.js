@@ -1,12 +1,12 @@
 
 import styles from "./StagesOfApprovalItem.module.css";
-
+import ArrowSRC from "../../../images/arrow.svg"
 const StagesOfApprovalItem = ({ indexNumber, stageTitleText, stageText }) => {
     return (
         <div className={styles.container}>
             <div className={styles.stageNumber}>
                 <p>{indexNumber}</p>
-                <img src="/assets/images/arrow.svg" alt="arrow" />
+                <img src={ArrowSRC} alt="arrow" />
             </div>
             <div className={styles.stageTextContainer}>
                 <p className={styles.stageTitleText}>{stageTitleText}</p>

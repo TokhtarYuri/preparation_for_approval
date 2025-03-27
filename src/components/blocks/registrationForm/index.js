@@ -4,8 +4,6 @@ import { REGISTRATION_CONTENT } from "../../../constants/text";
 const RegistrationForm = () => {
 
   return (
-    <div className={styles.mainContainer}>
-      <div className={styles.background}>
         <div className={styles.container}>
           <h2 className={styles.title}>{REGISTRATION_CONTENT.title}</h2>
           <form className={styles.form}>
@@ -15,8 +13,6 @@ const RegistrationForm = () => {
             <button type="submit" className={styles.button}>{REGISTRATION_CONTENT.button}</button>
           </form>
         </div>
-      </div>
-    </div>
   );
 };
 

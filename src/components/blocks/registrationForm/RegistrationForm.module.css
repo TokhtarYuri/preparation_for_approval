@@ -1,4 +1,4 @@
-.mainContainer{
+/* .mainContainer{
     position: relative;
     width: 100%;
 }
@@ -13,14 +13,13 @@
     /*     background: url("/images/background.jpg") no-repeat center center/cover;
     display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
     z-index: -1;
-}
+} */
 
 .container {
     position: relative;
     width: 100%;
-    display: flex;
     text-align: center;
     color: var(--white);
     margin: 30px 0;

@@ -1,12 +1,15 @@
 import styles from "./ForYou.module.css";
 import { FORYOU_CONTENT } from "../../../constants/text";
-
+import ForYou1SRC from "../../../images/for-you-1.png"
+import ForYou2SRC from "../../../images/for-you-2.png"
+import ForYou3SRC from "../../../images/for-you-3.png"
+import ForYou4SRC from "../../../images/for-you-4.png"
 const item_1 =
     <>
         <div className={styles.itemImage}>
             <div className={styles.itemImageBackground}></div>
             <div className={styles.itemImageBackgroundCircle}></div>
-            <img src="/assets/images/for-you-1.png" alt="for-you" className={styles.imageForYou} />
+            <img src={ForYou1SRC} alt="for-you" className={styles.imageForYou} />
         </div>
         <div className={styles.itemText}>
             <p>
@@ -23,7 +26,7 @@ const item_2 =
         <div className={styles.itemImage}>
             <div className={styles.itemImageBackground}></div>
             <div className={styles.itemImageBackgroundCircle}></div>
-            <img src="/assets/images/for-you-2.png" alt="for-you" className={styles.imageForYou} />
+            <img src={ForYou2SRC} alt="for-you" className={styles.imageForYou} />
         </div>
         <div className={styles.itemText}>
             <p>
@@ -39,7 +42,7 @@ const item_3 =
         <div className={styles.itemImage}>
             <div className={styles.itemImageBackground}></div>
             <div className={styles.itemImageBackgroundCircle}></div>
-            <img src="/assets/images/for-you-3.png" alt="for-you" className={styles.imageForYou} />
+            <img src={ForYou3SRC} alt="for-you" className={styles.imageForYou} />
         </div>
         <div className={styles.itemText}>
             <p>
@@ -56,7 +59,7 @@ const item_4 =
         <div className={styles.itemImage}>
             <div className={styles.itemImageBackground}></div>
             <div className={styles.itemImageBackgroundCircle}></div>
-            <img src="/assets/images/for-you-4.png" alt="for-you" className={styles.imageForYou} />
+            <img src={ForYou4SRC} alt="for-you" className={styles.imageForYou} />
         </div>
         <div className={styles.itemText}>
             <p>
