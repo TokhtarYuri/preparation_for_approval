@@ -19,7 +19,7 @@
   color: var(--white);
   font-family: "Bebas Neue Cyrillic", sans-serif;
   font-style: normal;
-  font-size: 54px;
+  font-size: 52px;
   font-weight: 800;
   line-height: 59px;
   font-stretch: condensed;
@@ -44,7 +44,7 @@
   padding: 4px 12px;
   border-radius: 15px;
   margin-bottom: 32px;
-  font-size: 17px !important;
+  font-size: 16px !important;
   font-weight: 400 !important;
   line-height: 23px !important;
 }
@@ -88,7 +88,7 @@
   position: absolute;
   width: 303px;
   height: 439px;
-  left: 115px;
+  right: 10px;
   top: 222px;
   z-index: -1;
 }
@@ -96,4 +96,12 @@
 
 .button {
   margin-top: 30px;
+}
+
+
+
+@media (max-width: 470px) {
+  .mainImage {
+    left: 110px;
+  }
 }
