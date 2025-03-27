@@ -11,7 +11,7 @@
     margin: 0 0 14px 41px;
     border-radius: 50px;
     background-color: var(--grey-background);
-    width: 294px;
+    width: calc(100%-41px);
     height: 102px;
     padding: 0 15px 0 38px;
 }
