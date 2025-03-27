@@ -1,15 +1,33 @@
 {
   "files": {
-    "main.css": "/preparation_for_approval/static/css/main.9966f831.css",
-    "main.js": "/preparation_for_approval/static/js/main.f4c4e882.js",
+    "main.css": "/preparation_for_approval/static/css/main.e91d6522.css",
+    "main.js": "/preparation_for_approval/static/js/main.4b2c848f.js",
+    "static/media/avatar-1.png": "/preparation_for_approval/static/media/avatar-1.af3f94c6483f69e7c477.png",
     "static/media/doctor-main.png": "/preparation_for_approval/static/media/doctor-main.4394f891a440a1af0a59.png",
+    "static/media/for-you-4.png": "/preparation_for_approval/static/media/for-you-4.b9bceefd0e484ba5229b.png",
+    "static/media/for-you-3.png": "/preparation_for_approval/static/media/for-you-3.f593e4323b0e49100ddd.png",
+    "static/media/for-you-2.png": "/preparation_for_approval/static/media/for-you-2.17ad1062c178140f5265.png",
+    "static/media/for-you-1.png": "/preparation_for_approval/static/media/for-you-1.5e66b9ff6758444469eb.png",
+    "static/media/logo.svg": "/preparation_for_approval/static/media/logo.9549be4779305d8b0360791f5321658e.svg",
+    "static/media/tooltip-arrow.svg": "/preparation_for_approval/static/media/tooltip-arrow.2f81f52feac506120ebae9d6589086db.svg",
+    "static/media/practical-2.svg": "/preparation_for_approval/static/media/practical-2.d777878af7217c5a3c240a70cf46ee7c.svg",
+    "static/media/practical-3.svg": "/preparation_for_approval/static/media/practical-3.a5e1674afa97c326456f1cca1dc164ee.svg",
+    "static/media/arrow.svg": "/preparation_for_approval/static/media/arrow.41a4b2cebc62419ece3e1c89808b9727.svg",
+    "static/media/practical-5.svg": "/preparation_for_approval/static/media/practical-5.15669cefb92983fda6c918a519b5d536.svg",
+    "static/media/plus.svg": "/preparation_for_approval/static/media/plus.f60c8252d8cc7d91eef993a49df63a77.svg",
+    "static/media/practical-1.svg": "/preparation_for_approval/static/media/practical-1.555c464909c9f01813e2fe11df66248b.svg",
+    "static/media/cross.svg": "/preparation_for_approval/static/media/cross.5cd7569331757953ece5a1f439567e15.svg",
+    "static/media/star.svg": "/preparation_for_approval/static/media/star.7dfbe0655a861cc593438b0e2b52b4c2.svg",
+    "static/media/checkmark.svg": "/preparation_for_approval/static/media/checkmark.b41a75387ad7bc4242757c82a81d4abb.svg",
     "index.html": "/preparation_for_approval/index.html",
+    "static/media/practical-4.svg": "/preparation_for_approval/static/media/practical-4.7e2387c0a015cd6eb691d5ff9e23b946.svg",
+    "static/media/arrow-slider.svg": "/preparation_for_approval/static/media/arrow-slider.3b62fb3f33b78b9e15ae0503ce7a731a.svg",
     "static/media/radiobutton.svg": "/preparation_for_approval/static/media/radiobutton.421416bb94b551814b4dbfeec97c38f0.svg",
-    "main.9966f831.css.map": "/preparation_for_approval/static/css/main.9966f831.css.map",
-    "main.f4c4e882.js.map": "/preparation_for_approval/static/js/main.f4c4e882.js.map"
+    "main.e91d6522.css.map": "/preparation_for_approval/static/css/main.e91d6522.css.map",
+    "main.4b2c848f.js.map": "/preparation_for_approval/static/js/main.4b2c848f.js.map"
   },
   "entrypoints": [
-    "static/css/main.9966f831.css",
-    "static/js/main.f4c4e882.js"
+    "static/css/main.e91d6522.css",
+    "static/js/main.4b2c848f.js"
   ]
 }
