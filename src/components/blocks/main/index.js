@@ -1,10 +1,10 @@
 import styles from "./Main.module.css";
 import { MAIN_CONTENT } from "../../../constants/text";
 import Button from "../../ui/button";
-import ExampleSRC from "../../../images/radiobutton.svg"; 
+import ExampleSRC from "../../../images/radiobutton.svg";
 import DoctorSRC from "../../../images/doctor-main.png";
 const Main = () => {
-  
+
   const handleClick = () => {
   };
 
@@ -48,7 +48,9 @@ const Main = () => {
         </div>
       </div>
       <img src={DoctorSRC} alt="doctor" className={styles.mainImage} />
-      <Button onClick={handleClick} className={styles.button}>{MAIN_CONTENT.buttonText}</Button>
+      <div className={styles.button}>
+        <Button onClick={handleClick}>{MAIN_CONTENT.buttonText}</Button>
+      </div>
     </main>
   );
 };
