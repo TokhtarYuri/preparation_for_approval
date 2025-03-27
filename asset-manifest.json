@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/preparation_for_approval/static/css/main.9966f831.css",
+    "main.js": "/preparation_for_approval/static/js/main.be58cda5.js",
+    "index.html": "/preparation_for_approval/index.html",
+    "main.9966f831.css.map": "/preparation_for_approval/static/css/main.9966f831.css.map",
+    "main.be58cda5.js.map": "/preparation_for_approval/static/js/main.be58cda5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9966f831.css",
+    "static/js/main.be58cda5.js"
+  ]
+}
