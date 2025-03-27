@@ -140,7 +140,7 @@ margin-left: 10px;
 
 .message {
   width: 100%;
-  padding: 3px 15px 12px;
+  padding: 5px 15px 10px;
   border-radius: 20px;
   background: rgba(223, 223, 223, 0.66);
   margin-top: 10px;
@@ -152,4 +152,9 @@ margin-left: 10px;
   font-weight: 400;
   line-height: 15px;
   color: var(--dark-color);
+  margin-bottom: 30px;
+}
+
+.message p:last-child {
+  margin-bottom: 20px; 
 }
