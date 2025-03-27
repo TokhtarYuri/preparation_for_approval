@@ -1,7 +1,8 @@
 import styles from "./Main.module.css";
 import { MAIN_CONTENT } from "../../../constants/text";
 import Button from "../../ui/button";
-
+import ExampleSRC from "../../../images/radiobutton.svg"; 
+import DoctorSRC from "../../../images/doctor-main.png";
 const Main = () => {
   const handleClick = () => {
     console.log("Button clicked!");
@@ -15,7 +16,7 @@ const Main = () => {
         <p >{MAIN_CONTENT.description}</p>
       </div>
       <div className={styles.container}>
-        <img src="/assets/images/radiobutton.svg" alt="Example" className={styles.image} />
+        <img src={ExampleSRC} alt="Example" className={styles.image} />
         <div className={styles.content1}>
           <p className={styles.description}>
             <span className={"text-secondary"}>{MAIN_CONTENT.paragraph_1}</span>{MAIN_CONTENT.paragraph_11}
@@ -23,7 +24,7 @@ const Main = () => {
         </div>
       </div>
       <div className={styles.container}>
-        <img src="/assets/images/radiobutton.svg" alt="Example" className={styles.image} />
+        <img src={ExampleSRC} alt="Example" className={styles.image} />
         <div className={styles.content2}>
           <p className={styles.description}>
             <span className={"text-secondary"}>{MAIN_CONTENT.paragraph_2}</span> {MAIN_CONTENT.paragraph_21}
@@ -31,21 +32,21 @@ const Main = () => {
         </div>
       </div>
       <div className={styles.container}>
-        <img src="/assets/images/radiobutton.svg" alt="Example" className={styles.image} />
+        <img src={ExampleSRC} alt="Example" className={styles.image} />
         <div className={styles.content3}>
           <p className={styles.description}>
             <span className={"text-secondary"}>{MAIN_CONTENT.paragraph_3}</span> {MAIN_CONTENT.paragraph_31}</p>
         </div>
       </div>
       <div className={styles.container}>
-        <img src="/assets/images/radiobutton.svg" alt="Example" className={styles.image} />
+        <img src={ExampleSRC} alt="Example" className={styles.image} />
         <div className={styles.content4}>
           <p className={styles.description}>
             <span className={"text-secondary"}>{MAIN_CONTENT.paragraph_4}</span> {MAIN_CONTENT.paragraph_41}
           </p>
         </div>
       </div>
-      <img src="/assets/images/doctor-main.png" alt="doctor" className={styles.mainImage} />
+      <img src={DoctorSRC} alt="doctor" className={styles.mainImage} />
       <Button onClick={handleClick} className={styles.button}>{MAIN_CONTENT.buttonText}</Button>
     </main>
   );
