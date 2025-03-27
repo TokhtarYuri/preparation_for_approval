@@ -10,16 +10,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-stretch: condensed;
 }
-
 
 .container h2 {
     margin-bottom: 32px;
-    font-size: 33px;
+    font-size: 27px;
     font-weight: 600;
     line-height: 35px;
-    transform: scaleY(1.3);
+    transform: scaleY(1.6);
 }
 
 .listItem {
@@ -40,9 +38,10 @@
 }
 
 .moduleNumber p {
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 600;
     line-height: 23px;
+    transform: scaleY(1.2);
 }
 
 .moduleTitle {
@@ -51,12 +50,12 @@
 }
 
 .moduleTitle p {
-    padding: 0 3px;
-    font-size: 14px;
+    padding: 0 8px;
+    font-size: 12px;
     font-weight: 600;
     line-height: 13px;
     text-align: left;
-    transform: scaleY(1.2);
+    transform: scaleY(1.3);
 }
 
 .plusButton {

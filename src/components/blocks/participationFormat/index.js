@@ -44,9 +44,11 @@ const ParticipationFormat = () => {
                     </div>
 
                     <div className={styles.priceContainer}>
-                        <div className={styles.fullPrice}>
-                            <p className="text-secondary">{PARTICIPATION_FORMAT_CONTENT.fullPrice}</p>
-                            <span>{PARTICIPATION_FORMAT_CONTENT.maximumFullPrice}</span>
+                    <div className={styles.fullPrice}>
+                            <div className={styles.fullPrice}>
+                                <p className="text-secondary">{PARTICIPATION_FORMAT_CONTENT.fullPrice}</p>
+                                <span>{PARTICIPATION_FORMAT_CONTENT.maximumFullPrice}</span>
+                            </div>
                         </div>
                         <div className={styles.priceLine}></div>
                         <div className={styles.inInstallments}>
