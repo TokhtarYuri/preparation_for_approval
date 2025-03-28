@@ -1,0 +1,40 @@
+.main {
+    width: 100vw;
+    background-color: #010724;
+    z-index: -30;
+}
+
+.problems {
+    position: relative;
+    width: 100vw;
+    background-color: #010724;
+    z-index: -30;
+}
+
+.mainToProblems{
+    position: absolute;
+    top:-2px;
+    width: 100vw;
+    height: 100px;
+    background-color: #010724;
+}
+
+
+
+.stagesOfApproval{
+    position: relative;
+    width: 100vw;
+    background-color: #ffffff;
+    z-index: -30;
+}
+
+.problemsToStages{
+    border-radius: 20px;
+    position: absolute;
+    top: -152px;
+    width: 100vw;
+    height: 100px;
+    box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.64);
+    background: rgb(1, 7, 36);
+    z-index: -30;
+}

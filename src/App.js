@@ -1,5 +1,4 @@
 import './App.css';
-import Background from './components/blocks/background';
 import Headers from './components/blocks/header';
 import Problems from './components/blocks/problems';
 import Main from './components/blocks/main';
@@ -12,24 +11,38 @@ import PracticalApproach from './components/blocks/practicalApproach';
 import Structure from './components/blocks/structure';
 import ParticipationFormat from './components/blocks/participationFormat';
 import RegistrationForm from './components/blocks/registrationForm';
+import styles from "./styles/background.module.css";
 
 function App() {
   return (
     <>
       <Headers />
       <div className="App-body">
-        {/*    <Background/> */}
-        <Main />
-        <Problems />
-        <StagesOfApproval />
+        <div className={styles.main}>
+          <Main />
+        </div>
+        <div className={styles.problems}>
+          <div className={styles.mainToProblems}>
+          </div>
+          <Problems />
+        </div>
+        <div className={styles.stagesOfApproval}>
+          <div className={styles.problemsToStages}>
+          </div>
+          <StagesOfApproval />
+        </div>
+
+
+
+
         <Experts />
         <ForYou />
-        <Results/>
-        <YouGet/>
-        <PracticalApproach/>
-        <Structure/>
-        <ParticipationFormat/>
-        <RegistrationForm/>
+        <Results />
+        <YouGet />
+        <PracticalApproach />
+        <Structure />
+        <ParticipationFormat />
+        <RegistrationForm />
       </div>
     </>
   );

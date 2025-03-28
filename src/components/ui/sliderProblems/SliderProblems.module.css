@@ -7,6 +7,7 @@
   max-width: 600px;
   margin: auto;
   overflow: hidden;
+  z-index: 10;
 }
 
 .card {
@@ -56,6 +57,7 @@
 .slide {
   min-width: 100%;
   border-radius: 10px;
+  z-index: 10;
 }
 
 .transition {
@@ -79,12 +81,14 @@
   margin-top: 20px;
   gap: 10px;
   width: 100%;
+  z-index: 10;
 }
 
 .indicators {
   display: flex;
   gap: 20px;
   width: 100%;
+  z-index: 10;
 }
 
 .indicator {
@@ -96,6 +100,7 @@
   cursor: pointer;
   background: rgb(79, 176, 255);
   opacity: 0.3;
+  z-index: 10;
 }
 
 .active {
