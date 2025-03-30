@@ -31,13 +31,21 @@ function App() {
           </div>
           <StagesOfApproval />
         </div>
-
-
-
-
+        <div className={styles.experts}>
+          <div className={styles.staegesToExperts}>
+          </div>
         <Experts />
+        </div>
+        <div className={styles.forYou}>
+          <div className={styles.expertsToForYou}>
+          </div>
         <ForYou />
+        </div>
+        <div className={styles.results}>
+          <div className={styles.forYouToResults}>
+          </div>
         <Results />
+        </div>
         <YouGet />
         <PracticalApproach />
         <Structure />

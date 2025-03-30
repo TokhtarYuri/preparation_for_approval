@@ -1,34 +1,33 @@
 .main {
     width: 100vw;
     background-color: #010724;
-    z-index: -30;
+    z-index: -1;
 }
 
 .problems {
     position: relative;
     width: 100vw;
     background-color: #010724;
-    z-index: -30;
+    z-index: -1;
 }
 
-.mainToProblems{
+.mainToProblems {
     position: absolute;
-    top:-2px;
+    top: -2px;
     width: 100vw;
     height: 100px;
     background-color: #010724;
+    z-index: -2;
 }
 
-
-
-.stagesOfApproval{
+.stagesOfApproval {
     position: relative;
     width: 100vw;
     background-color: #ffffff;
-    z-index: -30;
+    z-index: -2;
 }
 
-.problemsToStages{
+.problemsToStages {
     border-radius: 20px;
     position: absolute;
     top: -152px;
@@ -36,5 +35,60 @@
     height: 100px;
     box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.64);
     background: rgb(1, 7, 36);
-    z-index: -30;
+    z-index: -2;
+}
+
+.experts {
+    position: relative;
+    width: 100vw;
+    background-color: #010724;
+    z-index: -1;
+}
+
+.staegesToExperts {
+    position: absolute;
+    top: -20px;
+    width: 100vw;
+    height: 100px;
+    border-radius: 20px;
+    box-shadow: 0px -7px 7px 0px rgba(0, 0, 0, 0.67);
+    background: rgb(1, 7, 36);
+}
+
+
+.forYou {
+    position: relative;
+    width: 100vw;
+    background-color: #010724;
+    z-index: -2;
+    margin-bottom: -70px;
+}
+
+.expertsToForYou {
+    position: absolute;
+    top: -90px;
+    width: 100vw;
+    height: 100px;
+    background-color: #010724;
+    z-index: -2;
+}
+
+.results {
+    position: relative;
+    width: 100vw;
+    z-index: -2;
+    display: flex;
+    justify-content: center;
+ /*    text-align: center; */
+}
+
+.forYouToResults {
+    position: absolute;
+    top: 17px;
+    width: 125vw;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, #060E2D, #060E2D), #001030;
+    z-index: -2;
+
 }
