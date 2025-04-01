@@ -42,7 +42,7 @@ const StagesOfApproval = () => {
       <div className={styles.tooltip}>
         <div className={styles.tooltipIcon}>
           <img src={TooltipArrowSRC} alt="tooltip" />
-        <p><span className={`${"text-secondary"} ${styles.bold}`}>{STAGES_CONTENT.tooltip_1}</span></p>
+        <p><span className={`${styles.blueText} ${styles.bold}`}>{STAGES_CONTENT.tooltip_1}</span></p>
         <p>{STAGES_CONTENT.tooltip_2}</p>
         </div>
       </div>

@@ -3,7 +3,8 @@
     width: 100%;
     text-align: center;
     color: var(--white);
-    margin-top: 94px;
+/*     margin-top: 94px; */
+    padding: 0 20px;
 }
 
 .wrapper {

@@ -34,23 +34,47 @@ function App() {
         <div className={styles.experts}>
           <div className={styles.staegesToExperts}>
           </div>
-        <Experts />
+          <Experts />
         </div>
         <div className={styles.forYou}>
           <div className={styles.expertsToForYou}>
           </div>
-        <ForYou />
+          <ForYou />
         </div>
         <div className={styles.results}>
           <div className={styles.forYouToResults}>
           </div>
-        <Results />
+          <Results />
         </div>
-        <YouGet />
-        <PracticalApproach />
-        <Structure />
-        <ParticipationFormat />
-        <RegistrationForm />
+        <div className={styles.youGet}>
+          <div className={styles.resultsToYouGet}>
+          </div>
+          <YouGet />
+        </div>
+        <div className={styles.practicalApproach}>
+          <div className={styles.youGetToPracticalApproach}>
+          </div>
+          <PracticalApproach />
+          <div className={styles.practicalApproachfooter}>
+          </div>
+        </div>
+        <div className={styles.structure}>
+          <div className={styles.practicalApproachToStructure}>
+          </div>
+          <Structure />
+        </div>
+        <div className={styles.participationFormat}>
+          <div className={styles.structureToParticipationFormat}>
+          </div>
+          <ParticipationFormat />
+        </div>
+        <div className={styles.registrationForm}>
+        <div className={styles.participationFormatToRegistrationForm}>
+        </div>
+          <RegistrationForm />
+          <div className={styles.registrationFormFooter}>
+          </div>
+        </div>
       </div>
     </>
   );

@@ -90,5 +90,92 @@
     border-radius: 50%;
     background: linear-gradient(0deg, #060E2D, #060E2D), #001030;
     z-index: -2;
+}
+
+
+.youGet{
+
+}
+
+.resultsToYouGet{
+
+}
+
+.practicalApproach{
+    position: relative;
+    width: 100vw;
+    z-index: -2;
+    display: flex;
+    justify-content: center;
+    background-color: #010724;
+}
+.youGetToPracticalApproach{
+    position: absolute;
+    top: -35px;
+    width: 125vw;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, #060E2D, #060E2D), #001030;
+    z-index: -2;
+}
+
+.practicalApproachfooter{
+    position: absolute;
+    bottom: -65px;
+    width: 125vw;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, #060E2D, #060E2D), #001030;
+    z-index: -2;
+}
+
+.structure{
+
+}
+.practicalApproachToStructure{
+
+}
+
+.participationFormat{
+    position: relative;
+    width: 100vw;
+    z-index: -2;
+    display: flex;
+    justify-content: center;
+    background-color: #010724;
+}
+.structureToParticipationFormat{
+    position: absolute;
+    top: -35px;
+    width: 125vw;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, #060E2D, #060E2D), #001030;
+    z-index: -2;
+}
+
+.registrationForm{
+    position: relative;
+    z-index: -2;
+    justify-content: center;
+    background-color: #010724;
+}
+.participationFormatToRegistrationForm{
+    position: absolute;
+    top: -50px;
+    width: 100vw;
+    height: 100px;
+    background-color: #010724;
+    z-index: -2;
+}
+
+
+.registrationFormFooter{
+    position: absolute;
+    bottom: -145px;
+    width: 100vw;
+    height: 150px;
+    background-color: #010724;
+    z-index: -2;
 
 }

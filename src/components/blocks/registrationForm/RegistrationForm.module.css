@@ -18,6 +18,12 @@
 } */
 
 .container {
+    padding: 0 20px;
+    margin-bottom: 150px;
+    background-color: #010724;
+}
+
+.wrapper{
     position: relative;
     width: 100%;
     text-align: center;
