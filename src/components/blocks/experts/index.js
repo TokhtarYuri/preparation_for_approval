@@ -12,6 +12,9 @@ const Experts = () => {
         </h3>
       </div>
       <SliderExperts />
+
+      <div className={styles.itemImageBackgroundTop}></div>
+      <div className={styles.itemImageBackgroundBottom}></div>
     </div>
   );
 };

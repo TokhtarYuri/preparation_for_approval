@@ -23,3 +23,25 @@
   text-align: center;
 } 
 
+.itemImageBackgroundTop {
+  position: absolute;
+  left: -55px;
+  top: 215px;
+  width: 166px;
+  height: 176px;
+  filter: blur(100px);
+  background: rgb(79, 176, 255);
+  z-index: -3;
+}
+
+.itemImageBackgroundBottom {
+  position: absolute;
+  right: 0px;
+  bottom: 70px;
+  width: 166px;
+  height: 176px;
+  filter: blur(100px);
+  background: rgb(79, 176, 255);
+  z-index: -3;
+}
+

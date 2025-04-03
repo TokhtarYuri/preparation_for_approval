@@ -3,6 +3,7 @@ import { MAIN_CONTENT } from "../../../constants/text";
 import Button from "../../ui/button";
 import ExampleSRC from "../../../images/radiobutton.svg";
 import DoctorSRC from "../../../images/doctor-main.png";
+import BackgroundImgSRC from "../../../images/background-main-footer.svg"
 const Main = () => {
 
   const handleClick = () => {
@@ -51,6 +52,8 @@ const Main = () => {
       <div className={styles.button}>
         <Button onClick={handleClick}>{MAIN_CONTENT.buttonText}</Button>
       </div>
+      <img src={BackgroundImgSRC} alt="" className={styles.backgroundImgSRC} />  
+      <div className={styles.itemImageBackground}></div>
     </main>
   );
 };

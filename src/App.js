@@ -12,6 +12,7 @@ import Structure from './components/blocks/structure';
 import ParticipationFormat from './components/blocks/participationFormat';
 import RegistrationForm from './components/blocks/registrationForm';
 import styles from "./styles/background.module.css";
+import MainBackgroundImgSRC from "./images/main-background.png"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Headers />
       <div className="App-body">
         <div className={styles.main}>
+        <img src={MainBackgroundImgSRC} alt="" className={styles.mainBackgroundImgSRC} />
           <Main />
         </div>
         <div className={styles.problems}>
@@ -74,6 +76,7 @@ function App() {
           <RegistrationForm />
           <div className={styles.registrationFormFooter}>
           </div>
+          
         </div>
       </div>
     </>

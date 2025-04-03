@@ -34,7 +34,6 @@
     height: 176px;
     filter: blur(100px);
     background: rgb(79, 176, 255);
-    border: 4px solid rgb(240, 27, 27);
     z-index: -3;
 }
 

@@ -1,7 +1,7 @@
 import styles from "./Problems.module.css";
 import { PROBLEMS_CONTENT } from "../../../constants/text";
 import SliderProblems from "../../ui/sliderProblems";
-
+import EllipseImgSRC from "../../../images/ellipse.svg"
 const Problems = () => {
 
   return (
@@ -16,6 +16,8 @@ const Problems = () => {
         </h3>
       </div>
       <SliderProblems />
+
+      <img src={EllipseImgSRC} alt="" className={styles.ellipse} />  
     </div>
   );
 };
