@@ -7,6 +7,7 @@ import BackgroundImgSRC from "../../../images/background-main-footer.svg"
 const Main = () => {
 
   const handleClick = () => {
+    console.log("dsfsdfgdsg");
   };
 
   return (
@@ -54,6 +55,9 @@ const Main = () => {
       </div>
       <img src={BackgroundImgSRC} alt="" className={styles.backgroundImgSRC} />  
       <div className={styles.itemImageBackground}></div>
+       <div className={styles.ellipse1}></div>
+      <div className={styles.ellipse2}></div>
+      <div className={styles.ellipse3}></div>
     </main>
   );
 };
