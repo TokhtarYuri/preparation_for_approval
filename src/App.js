@@ -19,15 +19,28 @@ function App() {
     <>
       <Headers />
       <div className="App-body">
-        <div className={styles.main}>
+        {/*         <div className={styles.main}>
         <img src={MainBackgroundImgSRC} alt="" className={styles.mainBackgroundImgSRC} />
           <Main />
-        </div>
-        <div className={styles.problems}>
-          <div className={styles.mainToProblems}>
+        </div> */}
+        <div className={styles.mainWrapper}>
+          <div className={styles.background}>
+            <img src={MainBackgroundImgSRC} alt="" className={styles.mainBackgroundImgSRC} />
           </div>
-          <Problems />
+          <div className={styles.content}>
+            <Main />
+          </div>
         </div>
+        <div className={styles.problemsWrapper}>
+          <div className={styles.problemsBackground}>
+            <div className={styles.mainToProblems}></div>
+            <div className={styles.ellipse17}></div> 
+          </div>
+          <div className={styles.problemsContent}>
+            <Problems />
+          </div>
+        </div>
+
         <div className={styles.stagesOfApproval}>
           <div className={styles.problemsToStages}>
           </div>
@@ -71,12 +84,12 @@ function App() {
           <ParticipationFormat />
         </div>
         <div className={styles.registrationForm}>
-        <div className={styles.participationFormatToRegistrationForm}>
-        </div>
+          <div className={styles.participationFormatToRegistrationForm}>
+          </div>
           <RegistrationForm />
           <div className={styles.registrationFormFooter}>
           </div>
-          
+
         </div>
       </div>
     </>

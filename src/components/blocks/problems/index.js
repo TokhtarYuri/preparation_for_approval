@@ -17,7 +17,7 @@ const Problems = () => {
       </div>
       <SliderProblems />
 
-      <img src={EllipseImgSRC} alt="" className={styles.ellipse} />  
+{/*       <img src={EllipseImgSRC} alt="" className={styles.ellipse} />   */}
     </div>
   );
 };

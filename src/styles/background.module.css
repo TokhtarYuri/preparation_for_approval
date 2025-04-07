@@ -1,9 +1,8 @@
-.main {
-    position: relative;
+/* .main {
+    position: relative; 
     width: 100vw;
     background-color: #010724;
-    z-index: -3;
-    pointer-events: none;
+    z-index: -3; 
 }
 
 .mainBackgroundImgSRC{
@@ -12,14 +11,46 @@
     height: 693px;
     left: -144px;
     top: -4px;
-/*     z-index: -1; */
     filter: blur(4px);
     pointer-events: none;
+}
+ */
+
+.mainWrapper {
+    position: relative;
+    width: 100vw;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    width: 100%;
+    height: 100%;
+    background-color: #010724;
+    pointer-events: none;
+    /* чтобы фон не мешал кликам */
+}
+
+.mainBackgroundImgSRC {
+    position: absolute;
+    width: 1039.37px;
+    height: 693px;
+    left: -144px;
+    top: -4px;
+    filter: blur(4px);
+}
+
+.content {
+    position: relative;
+    z-index: 0;
+    /* теперь <Main /> будет в нормальном потоке */
 }
 
 
 
-.problems {
+/* .problems {
     position: relative;
     width: 100vw;
     background-color: #010724;
@@ -33,7 +64,49 @@
     height: 100px;
     background-color: #010724;
     z-index: -1;
+} */
+.problemsWrapper {
+    position: relative;
+    width: 100vw;
+    background-color: #010724;
 }
+
+.problemsBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*     z-index: -3; */
+    pointer-events: none;
+    /* фон не мешает */
+    background-color: #010724;
+}
+
+.mainToProblems {
+    position: absolute;
+    top: -2px;
+    width: 100vw;
+    height: 100px;
+    background-color: #010724;
+}
+
+.problemsContent {
+    position: relative;
+    z-index: 0;
+}
+
+
+.ellipse17 {
+    position: absolute;
+    width: 121px;
+    height: 422.28px;
+    left: -68px;
+    top: 103px;
+    filter: blur(150px);
+    background: rgb(0, 186, 253);
+}
+
 
 .stagesOfApproval {
     position: relative;
@@ -94,7 +167,7 @@
     z-index: -2;
     display: flex;
     justify-content: center;
- /*    text-align: center; */
+    /*    text-align: center; */
 }
 
 .forYouToResults {
@@ -108,15 +181,11 @@
 }
 
 
-.youGet{
+.youGet {}
 
-}
+.resultsToYouGet {}
 
-.resultsToYouGet{
-
-}
-
-.practicalApproach{
+.practicalApproach {
     position: relative;
     width: 100vw;
     z-index: -2;
@@ -124,7 +193,8 @@
     justify-content: center;
     background-color: #010724;
 }
-.youGetToPracticalApproach{
+
+.youGetToPracticalApproach {
     position: absolute;
     top: -35px;
     width: 125vw;
@@ -134,7 +204,7 @@
     z-index: -2;
 }
 
-.practicalApproachfooter{
+.practicalApproachfooter {
     position: absolute;
     bottom: -65px;
     width: 125vw;
@@ -144,14 +214,11 @@
     z-index: -2;
 }
 
-.structure{
+.structure {}
 
-}
-.practicalApproachToStructure{
+.practicalApproachToStructure {}
 
-}
-
-.participationFormat{
+.participationFormat {
     position: relative;
     width: 100vw;
     z-index: -2;
@@ -159,7 +226,8 @@
     justify-content: center;
     background-color: #010724;
 }
-.structureToParticipationFormat{
+
+.structureToParticipationFormat {
     position: absolute;
     top: -35px;
     width: 125vw;
@@ -169,13 +237,14 @@
     z-index: -2;
 }
 
-.registrationForm{
+.registrationForm {
     position: relative;
     z-index: -2;
     justify-content: center;
     background-color: #010724;
 }
-.participationFormatToRegistrationForm{
+
+.participationFormatToRegistrationForm {
     position: absolute;
     top: -50px;
     width: 100vw;
@@ -185,7 +254,7 @@
 }
 
 
-.registrationFormFooter{
+.registrationFormFooter {
     position: absolute;
     bottom: -100px;
     width: 100vw;
