@@ -3,6 +3,8 @@ import styles from "./SliderExperts.module.css";
 import { EXPERTS_CONTENT } from "../../../constants/text";
 import LogoSRC from "../../../images/logo.svg"
 import Avatar1SRC from "../../../images/avatar-1.png"
+import Avatar2SRC from "../../../images/avatar-2.png"
+import Avatar3SRC from "../../../images/avatar-3.png"
 import ArrowSliderSRC from "../../../images/arrow-slider.svg"
 
 const expert_1 =
@@ -29,7 +31,7 @@ const expert_1 =
 const expert_2 =
     <div className={styles.itemExpert}>
         <img src={LogoSRC} alt="Logo" className={styles.logo} />
-        <img src={Avatar1SRC} alt="problems" className={styles.imageAvatar} />
+        <img src={Avatar2SRC} alt="problems" className={styles.imageAvatar} />
         <h4 className={styles.nameExpert}>{EXPERTS_CONTENT.name_2}</h4>
         <p>{EXPERTS_CONTENT.job_2}</p>
         <div className={styles.line}></div>
@@ -47,10 +49,32 @@ const expert_2 =
         </div>
     </div>
 
+const expert_3 =
+    <div className={styles.itemExpert}>
+        <img src={LogoSRC} alt="Logo" className={styles.logo} />
+        <img src={Avatar3SRC} alt="problems" className={styles.imageAvatar} />
+        <h4 className={styles.nameExpert}>{EXPERTS_CONTENT.name_3}</h4>
+        <p>{EXPERTS_CONTENT.job_3}</p>
+        <div className={styles.line}></div>
+        <div className={styles.listCV}>
+            {EXPERTS_CONTENT.cv_3.map((item, index) => (
+                <div key={index} className={styles.cv}>
+                    <div className={styles.marker}></div>
+                    <p key={index}>{item}</p>
+                </div>
+            ))}
+        </div>
+        <div className={styles.message}>
+            <p>{EXPERTS_CONTENT.message_3}</p>
+            <p>{EXPERTS_CONTENT.message_33}</p>
+        </div>
+    </div>
+
 
 const data = [
     { expert: expert_1 },
-    { expert: expert_2 }
+    { expert: expert_2 },
+    { expert: expert_3 }
 ];
 
 const SliderExperts = () => {
@@ -101,13 +125,13 @@ const SliderExperts = () => {
         }
     };
 
-          useEffect(() => {
-            const interval = setInterval(() => {
-                setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
-            }, 10000);
-        
-            return () => clearInterval(interval);
-        }, [data.length]);  
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
+        }, 10000);
+
+        return () => clearInterval(interval);
+    }, [data.length]);
 
     return (
         <div className={styles.sliderContainer}>
@@ -134,7 +158,7 @@ const SliderExperts = () => {
                         ></button>
                     ))}
                 </div>
-            
+
                 <div className={styles.arrow} onClick={prevSlide}></div>
                 <img src={ArrowSliderSRC} alt="" onClick={prevSlide} />
 

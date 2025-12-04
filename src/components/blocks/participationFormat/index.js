@@ -1,153 +1,92 @@
 import styles from "./ParticipationFormat.module.css";
 import { PARTICIPATION_FORMAT_CONTENT } from "../../../constants/text";
-import CrossSRC from "../../../images/cross.svg"
-import CheckmarkSRC from "../../../images/checkmark.svg"
+import CrossSRC from "../../../images/cross.svg";
+import CheckmarkSRC from "../../../images/checkmark.svg";
+
+const PlanCard = ({ plan }) => (
+  <div className={styles.planCard}>
+    <div className={styles.planHeader}>
+      <h4>{plan.title}</h4>
+      <p>{plan.description}</p>
+    </div>
+    <div className={styles.list}>
+      {plan.list.map((item, idx) => (
+        <div key={idx} className={styles.listItem}>
+          <div className={styles.icon}>
+            {item.value ? (
+              <img src={CheckmarkSRC} alt="checkmark" />
+            ) : (
+              <img src={CrossSRC} alt="cross" />
+            )}
+          </div>
+          <div className={styles.term}>
+            <p>{item.termItem}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+    <p>
+      {plan.estimatedPrice}
+    </p>
+    <div className={styles.price}>
+      <div className={styles.full}>
+        <p className="text-secondary">{plan.fullPriceText}</p>
+        <span>{plan.fullPrice}</span>
+      </div>
+      <div className={styles.divider}></div>
+      <div className={styles.installments}>
+        <p className="text-secondary">{plan.installmentsText}</p>
+        <span>{plan.installments}</span>
+      </div>
+    </div>
+  </div>
+);
 
 const ParticipationFormat = () => {
-    return (
-        <div className={styles.container}>
-            <div className={styles.wrapper}>
-                <h2>
-                    {PARTICIPATION_FORMAT_CONTENT.title}
-                </h2>
+  const plans = [
+    {
+      title: PARTICIPATION_FORMAT_CONTENT.maximumTitle,
+      description: PARTICIPATION_FORMAT_CONTENT.maximumDescription,
+      list: PARTICIPATION_FORMAT_CONTENT.listMaximum,
+      fullPriceText: PARTICIPATION_FORMAT_CONTENT.fullPrice,
+      fullPrice: PARTICIPATION_FORMAT_CONTENT.maximumFullPrice,
+      installmentsText: PARTICIPATION_FORMAT_CONTENT.inInstallments,
+      installments: PARTICIPATION_FORMAT_CONTENT.maximumInInstallments,
+      estimatedPrice: PARTICIPATION_FORMAT_CONTENT.estimatedPrice,
+    },
+    {
+      title: PARTICIPATION_FORMAT_CONTENT.proTitle,
+      description: PARTICIPATION_FORMAT_CONTENT.proDescription,
+      list: PARTICIPATION_FORMAT_CONTENT.listPro,
+      fullPriceText: PARTICIPATION_FORMAT_CONTENT.fullPrice,
+      fullPrice: PARTICIPATION_FORMAT_CONTENT.proFullPrice,
+      installmentsText: PARTICIPATION_FORMAT_CONTENT.inInstallments,
+      installments: PARTICIPATION_FORMAT_CONTENT.proInInstallments,
+      estimatedPrice: PARTICIPATION_FORMAT_CONTENT.estimatedPrice,
+    },
+    {
+      title: PARTICIPATION_FORMAT_CONTENT.basicTitle,
+      description: PARTICIPATION_FORMAT_CONTENT.basicDescription,
+      list: PARTICIPATION_FORMAT_CONTENT.listBasic,
+      fullPriceText: PARTICIPATION_FORMAT_CONTENT.fullPrice,
+      fullPrice: PARTICIPATION_FORMAT_CONTENT.basicFullPrice,
+      installmentsText: PARTICIPATION_FORMAT_CONTENT.inInstallments,
+      installments: PARTICIPATION_FORMAT_CONTENT.basicInInstallments,
+      estimatedPrice: PARTICIPATION_FORMAT_CONTENT.estimatedPrice,
+    },
+  ];
 
 
-                {/* MAXIMUM start */}
-                <div className={styles.maximumContainer}>
-                    <div className={styles.maximumTitle}>
-                        <h4>{PARTICIPATION_FORMAT_CONTENT.maximumTitle}</h4>
-                        <p>{PARTICIPATION_FORMAT_CONTENT.maximumDescription}</p>
-                    </div>
-                    <div className={styles.line}></div>
-                    {PARTICIPATION_FORMAT_CONTENT.listMaximum.map((item, index) => (
-                        <div key={index} className={styles.listItem}>
-                            <div className={styles.value}>
-                                <div className={styles.cross}>
-                                    {!item.value && (
-                                        <img src={CrossSRC} alt="cross" />
-                                    )}
-                                </div>
-                                <div className={styles.checkmark}>
-                                    {item.value && (
-                                        <img src={CheckmarkSRC} alt="checkmark" />
-                                    )}
-                                </div>
-
-                            </div>
-                            <div className={styles.termItem}>
-                                <p>{item.termItem}</p>
-                            </div>
-                        </div>
-                    ))}
-                    <div className={styles.estimatedPrice}>
-                        <p>{PARTICIPATION_FORMAT_CONTENT.estimatedPrice}</p>
-                    </div>
-
-                    <div className={styles.priceContainer}>
-                    <div className={styles.fullPrice}>
-                            <div className={styles.fullPrice}>
-                                <p className="text-secondary">{PARTICIPATION_FORMAT_CONTENT.fullPrice}</p>
-                                <span>{PARTICIPATION_FORMAT_CONTENT.maximumFullPrice}</span>
-                            </div>
-                        </div>
-                        <div className={styles.priceLine}></div>
-                        <div className={styles.inInstallments}>
-                            <p className="text-secondary">{PARTICIPATION_FORMAT_CONTENT.inInstallments}</p>
-                            <span>{PARTICIPATION_FORMAT_CONTENT.maximumInInstallments}</span>
-                        </div>
-                    </div>
-                </div>
-                {/* MAXIMUM end */}
-                {/* PRO start */}
-                <div className={styles.maximumContainer}>
-                    <div className={styles.maximumTitle}>
-                        <h4>{PARTICIPATION_FORMAT_CONTENT.proTitle}</h4>
-                        <p>{PARTICIPATION_FORMAT_CONTENT.proDescription}</p>
-                    </div>
-                    <div className={styles.line}></div>
-                    {PARTICIPATION_FORMAT_CONTENT.listPro.map((item, index) => (
-                        <div key={index} className={styles.listItem}>
-                            <div className={styles.value}>
-                                <div className={styles.cross}>
-                                    {!item.value && (
-                                        <img src={CrossSRC} alt="cross" />
-                                    )}
-                                </div>
-                                <div className={styles.checkmark}>
-                                    {item.value && (
-                                        <img src={CheckmarkSRC} alt="checkmark" />
-                                    )}
-                                </div>
-
-                            </div>
-                            <div className={styles.termItem}>
-                                <p>{item.termItem}</p>
-                            </div>
-                        </div>
-                    ))}
-                    <div className={styles.estimatedPrice}>
-                        <p>{PARTICIPATION_FORMAT_CONTENT.estimatedPrice}</p>
-                    </div>
-
-                    <div className={styles.priceContainer}>
-                        <div className={styles.fullPrice}>
-                            <p className="text-secondary">{PARTICIPATION_FORMAT_CONTENT.fullPrice}</p>
-                            <span>{PARTICIPATION_FORMAT_CONTENT.proFullPrice}</span>
-                        </div>
-                        <div className={styles.priceLine}></div>
-                        <div className={styles.inInstallments}>
-                            <p className="text-secondary">{PARTICIPATION_FORMAT_CONTENT.inInstallments}</p>
-                            <span>{PARTICIPATION_FORMAT_CONTENT.proInInstallments}</span>
-                        </div>
-                    </div>
-                </div>
-                {/* PRO end */}
-                {/* BASIC start */}
-                <div className={styles.maximumContainer}>
-                    <div className={styles.maximumTitle}>
-                        <h4>{PARTICIPATION_FORMAT_CONTENT.basicTitle}</h4>
-                        <p>{PARTICIPATION_FORMAT_CONTENT.basicDescription}</p>
-                    </div>
-                    <div className={styles.line}></div>
-                    {PARTICIPATION_FORMAT_CONTENT.listBasic.map((item, index) => (
-                        <div key={index} className={styles.listItem}>
-                            <div className={styles.value}>
-                                <div className={styles.cross}>
-                                    {!item.value && (
-                                        <img src={CrossSRC} alt="cross" />
-                                    )}
-                                </div>
-                                <div className={styles.checkmark}>
-                                    {item.value && (
-                                        <img src={CheckmarkSRC} alt="checkmark" />
-                                    )}
-                                </div>
-
-                            </div>
-                            <div className={styles.termItem}>
-                                <p>{item.termItem}</p>
-                            </div>
-                        </div>
-                    ))}
-                    <div className={styles.estimatedPrice}>
-                        <p>{PARTICIPATION_FORMAT_CONTENT.estimatedPrice}</p>
-                    </div>
-
-                    <div className={styles.priceContainer}>
-                        <div className={styles.fullPrice}>
-                            <p className="text-secondary">{PARTICIPATION_FORMAT_CONTENT.fullPrice}</p>
-                            <span>{PARTICIPATION_FORMAT_CONTENT.basicFullPrice}</span>
-                        </div>
-                        <div className={styles.priceLine}></div>
-                        <div className={styles.inInstallments}>
-                            <p className="text-secondary">{PARTICIPATION_FORMAT_CONTENT.inInstallments}</p>
-                            <span>{PARTICIPATION_FORMAT_CONTENT.basicInInstallments}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div >
-    );
-}
+  return (
+    <div className={styles.container}>
+      <h2>{PARTICIPATION_FORMAT_CONTENT.title}</h2>
+      <div className={styles.plans}>
+        {plans.map((plan, idx) => (
+          <PlanCard key={idx} plan={plan} />
+        ))}
+      </div>
+    </div>
+  );
+};
 
 export default ParticipationFormat;

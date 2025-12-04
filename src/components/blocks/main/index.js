@@ -4,10 +4,14 @@ import Button from "../../ui/button";
 import ExampleSRC from "../../../images/radiobutton.svg";
 import DoctorSRC from "../../../images/doctor-main.png";
 import BackgroundImgSRC from "../../../images/background-main-footer.svg"
-const Main = () => {
 
-  const handleClick = () => {
-    console.log("dsfsdfgdsg");
+const Main = () => {
+  
+    const scrollToRegistration = () => {
+    const element = document.getElementById("registration-form");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -15,49 +19,31 @@ const Main = () => {
       <div className={styles.wrapper}>
         <h1>{MAIN_CONTENT.title}</h1>
       </div>
+
       <div className={styles.descriptionButton}>
-        <p >{MAIN_CONTENT.description}</p>
+        <p>{MAIN_CONTENT.description}</p>
       </div>
-      <div className={styles.container}>
-        <img src={ExampleSRC} alt="Example" className={styles.image} />
-        <div className={styles.content1}>
-          <p className={styles.description}>
-            <span className={"text-secondary"}>{MAIN_CONTENT.paragraph_1}</span>{MAIN_CONTENT.paragraph_11}
-          </p>
+
+      {[1,2,3,4].map(i => (
+        <div key={i} className={styles.container}>
+          <img src={ExampleSRC} alt="Example" className={styles.image} />
+          <div className={styles[`content${i}`]}>
+            <p>
+              <span className="text-secondary">{MAIN_CONTENT[`paragraph_${i}`]}</span>
+              {MAIN_CONTENT[`paragraph_${i}1`]}
+            </p>
+          </div>
         </div>
-      </div>
-      <div className={styles.container}>
-        <img src={ExampleSRC} alt="Example" className={styles.image} />
-        <div className={styles.content2}>
-          <p className={styles.description}>
-            <span className={"text-secondary"}>{MAIN_CONTENT.paragraph_2}</span> {MAIN_CONTENT.paragraph_21}
-          </p>
-        </div>
-      </div>
-      <div className={styles.container}>
-        <img src={ExampleSRC} alt="Example" className={styles.image} />
-        <div className={styles.content3}>
-          <p className={styles.description}>
-            <span className={"text-secondary"}>{MAIN_CONTENT.paragraph_3}</span> {MAIN_CONTENT.paragraph_31}</p>
-        </div>
-      </div>
-      <div className={styles.container}>
-        <img src={ExampleSRC} alt="Example" className={styles.image} />
-        <div className={styles.content4}>
-          <p className={styles.description}>
-            <span className={"text-secondary"}>{MAIN_CONTENT.paragraph_4}</span> {MAIN_CONTENT.paragraph_41}
-          </p>
-        </div>
-      </div>
-      <img src={DoctorSRC} alt="doctor" className={styles.mainImage} />
+      ))}
+
       <div className={styles.button}>
-        <Button onClick={handleClick}>{MAIN_CONTENT.buttonText}</Button>
+        <Button onClick={scrollToRegistration}>{MAIN_CONTENT.buttonText}</Button>
       </div>
+
+      <img src={DoctorSRC} alt="doctor" className={styles.mainImage} />
       <img src={BackgroundImgSRC} alt="" className={styles.backgroundImgSRC} />  
-      <div className={styles.itemImageBackground}></div>
-       <div className={styles.ellipse1}></div>
-      <div className={styles.ellipse2}></div>
-      <div className={styles.ellipse3}></div>
+       <div className={styles.itemImageBackground}></div> 
+       
     </main>
   );
 };

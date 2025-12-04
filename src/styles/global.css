@@ -6,7 +6,7 @@
 
 :root {
   --primary-color: #33A3FF;
-  --secondary-color: #4FB0FF;
+  --secondary-color: #077ddd;
   --accent-color: #008CFF;
   --dark-color: #000621;
   --dark-background: #010724;
@@ -17,9 +17,18 @@
   --black: #000;
 }
 
+#root {
+  max-width: 768px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
 body {
   font-family: 'Open Sans Condensed', sans-serif;
-  max-width: 768px;
+  margin: 0;
+  padding: 0;
+  background: #fff;
 }
 
 h1 {

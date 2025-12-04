@@ -1,47 +1,27 @@
-.main {
+.container {
   position: relative;
   width: 100%;
+  max-width: 768px;
+  padding: 0 20px;
   text-align: center;
   color: var(--white);
-  padding: 0 20px;
 }
 
-.main h3 {
-  margin: 32px 0 34px 0;
-  color: var(--white);
-  font-family: "Bebas Neue Cyrillic", sans-serif;
-  font-style: normal;
+.container h3 {
+  font-family: 'Bebas Neue Cyrillic', sans-serif;
   font-size: 32px;
   font-weight: 600;
   line-height: 34px;
   transform: scaleY(1.4);
+  margin-bottom: 35px;
 }
 
- .wrapper {
-  display: inline-block;
+.wrapper {
   width: 100%;
   text-align: center;
-} 
-
-.itemImageBackgroundTop {
-  position: absolute;
-  left: -55px;
-  top: 215px;
-  width: 166px;
-  height: 176px;
-  filter: blur(100px);
-  background: rgb(79, 176, 255);
-  z-index: -3;
+  display: block;
 }
 
-.itemImageBackgroundBottom {
-  position: absolute;
-  right: 0px;
-  bottom: 70px;
-  width: 166px;
-  height: 176px;
-  filter: blur(100px);
-  background: rgb(79, 176, 255);
-  z-index: -3;
+.sliderWrapper {
+  margin-bottom: 50px;
 }
-

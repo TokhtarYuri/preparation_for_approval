@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   text-align: center;
-  padding: 0 40px;
+  padding: 60px 20px 100px;
   color: var(--white);
   z-index: 1; 
 }
@@ -14,7 +14,7 @@
   font-weight: 600;
   line-height: 25px;
   transform: scaleY(1.6);
-  color: var(--white);
+  color: var(--black);
   position: relative;
   z-index: 1;
 }

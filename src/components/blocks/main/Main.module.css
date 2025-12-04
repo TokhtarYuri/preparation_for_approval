@@ -2,68 +2,67 @@
   position: relative;
   width: 100%;
   text-align: center;
-  justify-content: center;
-  color: var(--white);
   display: flex;
   flex-direction: column;
   padding: 0 20px;
-  z-index: 1000;
-}
-
-.main p {
-  position: relative;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
-  z-index: 20;
-
+  color: var(--white);
+  z-index: 1;
 }
 
 .main h1 {
-  position: relative;
-  margin-top: 52px;
-  color: var(--white);
   font-family: "Bebas Neue Cyrillic", sans-serif;
-  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 46px;
+  color: var(--white);
+  position: relative;
   transform: scaleY(1.6);
-  z-index: 20;
+  z-index: 1;
+  padding: 0 20px;
+}
+
+.main p {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
 }
 
 .wrapper {
-  display: inline-block;
   width: 100%;
-  height: 180px;
   text-align: center;
-  z-index: 1000;
+  margin-bottom: 20px;
+  padding: 50px 50px 30px;
 }
 
 .descriptionButton {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 32px;
 }
 
 .descriptionButton p {
   background-color: var(--primary-color);
   padding: 4px 12px;
   border-radius: 15px;
-  margin-bottom: 32px;
-  font-size: 16px !important;
-  font-weight: 400 !important;
-  line-height: 23px !important;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
 }
 
 .coloredText {
-  font-weight: 600 !important;
+  font-weight: 600;
   color: var(--secondary-color);
 }
 
 .container {
-  margin-bottom: 14px;
   display: flex;
   gap: 10px;
+  margin-bottom: 14px;
   text-align: left;
-  z-index: 20;
+  z-index: 1;
 }
 
 .image {
@@ -71,7 +70,6 @@
   height: 15px;
   flex-shrink: 0;
 }
-
 
 .content1 {
   width: 180px;
@@ -92,49 +90,64 @@
 .mainImage {
   position: absolute;
   width: 303px;
-  height: 439px;
-  right: 20px;
-  top: 222px;
+  height: auto;
+  right: 60px;
+  top: 230px;
+  z-index: 1;
 }
-
 
 .button {
-  position: relative;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 25px 0px 5px;
-  z-index: 1000;
+  margin: 25px 0 5px;
+  z-index: 10;
+  animation: pulse 2s ease-in-out infinite;
 }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05); /* чуть больше */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 
 .backgroundImgSRC {
   position: absolute;
-  width: 768px;
-  height: 1050px;
-  right: -193px;
+  width: 100%;
+  max-width: 768px;
+  height: auto;
+  right: 0px;
   top: 1px;
+  z-index: 0;
 }
 
 .itemImageBackground {
   position: absolute;
-  right: 20px;
-  top: 240px;
+  right: -50px;
+  top: 290px;
   width: 166px;
   height: 176px;
-  filter: blur(100px);
-  background: rgb(252, 254, 255);
-  z-index: -3;
+  filter: blur(90px);
+  background: rgb(152, 221, 255);
+  z-index: 0;
 }
-
 
 .ellipse1,
 .ellipse2,
 .ellipse3 {
   position: absolute;
-  width: 768px;
+  width: 100%;
   height: 143px;
   left: 0;
   top: 613px;
   background: rgb(1, 7, 36);
+  z-index: 0;
 }
 
 .ellipse1 {
@@ -149,12 +162,19 @@
   filter: blur(20px);
 }
 
+@media (max-width: 500px) {
 
-
-
-
-@media (max-width: 480px) {
-  .mainImage {
-    left: 140px;
+  .wrapper {
+    height: auto;
+    padding: 50px 0px 30px;
   }
+
+  .mainImage {
+    right: -60px;
+  }
+
+  .main h1 {
+    padding: 0;
+  }
+
 }

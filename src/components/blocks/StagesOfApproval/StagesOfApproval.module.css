@@ -1,38 +1,43 @@
 .container {
   position: relative;
   width: 100%;
-  text-align: center;
-  margin-top: 130px;
-  margin-bottom: 50px;
-  font-stretch: condensed;
-  color: var(--dark-color);
+  max-width: 768px;
   padding: 0 20px;
+  text-align: center;
+  color: var(--dark-color);
+  font-stretch: condensed;
 }
 
 .container h2 {
-  min-height: 100px;
+  font-family: 'Bebas Neue Cyrillic', sans-serif;
   font-size: 42px;
   font-weight: 600;
   line-height: 42px;
   transform: scaleY(1.5);
+  margin-bottom: 20px;
+}
+
+.stageTitle {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  margin: 30px 0 40px;
+}
+
+.stagesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 40px;
 }
 
 .container h3 {
-  min-height: 84px;
-  margin-top: 55px;
-  padding: 0 30px;
-  font-size: 27px;
+  font-size: 30px;
   font-weight: 600;
   line-height: 30px;
   transform: scaleY(1.2);
   color: var(--accent-color);
-}
-
-.stageTitle {
-  margin: 37px 0 41px 0;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 26px;
+  margin-bottom: 10px;
 }
 
 .helpDescription {
@@ -40,40 +45,51 @@
   font-weight: 600;
   line-height: 20px;
   transform: scaleY(1.2);
+  margin-bottom: 35px;
 }
 
 .button {
-  margin-top: 35px;
   font-size: 20px;
   font-weight: 700;
   line-height: 20px;
   border-radius: 5px;
-  background:none;
   background-color: var(--accent-color);
+  padding: 10px 25px;
+  cursor: pointer;
+  border: none;
+  animation: pulse 2s ease-in-out infinite;
 }
 
-.tooltip{
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.tooltip {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 13px;
+  margin-top: 15px;
 }
 
-.bold{
-  font-weight: 700;
-}
-
-.tooltipIcon{
+.tooltipIcon {
   position: relative;
   width: 300px;
 }
 
-.tooltipIcon img{
+.tooltipIcon img {
   position: absolute;
   top: -9px;
   left: -25px;
 }
 
-.blueText{
+.blueText {
   color: var(--accent-color);
+  font-weight: 700;
 }

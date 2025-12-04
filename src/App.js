@@ -13,16 +13,14 @@ import ParticipationFormat from './components/blocks/participationFormat';
 import RegistrationForm from './components/blocks/registrationForm';
 import styles from "./styles/background.module.css";
 import MainBackgroundImgSRC from "./images/main-background.png"
+import Reviews from './components/blocks/reviews';
 
 function App() {
   return (
     <>
       <Headers />
       <div className="App-body">
-        {/*         <div className={styles.main}>
-        <img src={MainBackgroundImgSRC} alt="" className={styles.mainBackgroundImgSRC} />
-          <Main />
-        </div> */}
+
         <div className={styles.mainWrapper}>
           <div className={styles.background}>
             <img src={MainBackgroundImgSRC} alt="" className={styles.mainBackgroundImgSRC} />
@@ -31,10 +29,10 @@ function App() {
             <Main />
           </div>
         </div>
+
         <div className={styles.problemsWrapper}>
           <div className={styles.problemsBackground}>
-            <div className={styles.mainToProblems}></div>
-            <div className={styles.ellipse17}></div> 
+            <div className={styles.ellipse17}></div>
           </div>
           <div className={styles.problemsContent}>
             <Problems />
@@ -42,55 +40,74 @@ function App() {
         </div>
 
         <div className={styles.stagesOfApproval}>
-          <div className={styles.problemsToStages}>
+          <div className={styles.problemsToStages}></div>
+          <div className={styles.content}>
+            <StagesOfApproval />
           </div>
-          <StagesOfApproval />
+          <div className={styles.staegesToExperts}></div>
         </div>
+
         <div className={styles.experts}>
-          <div className={styles.staegesToExperts}>
+          <div className={styles.content}>
+            <Experts />
           </div>
-          <Experts />
         </div>
+
         <div className={styles.forYou}>
-          <div className={styles.expertsToForYou}>
+          <div className={styles.content}>
+            <ForYou />
           </div>
-          <ForYou />
         </div>
+
         <div className={styles.results}>
-          <div className={styles.forYouToResults}>
+          <div className={styles.forYouToResults}></div>
+          <div className={styles.content}>
+            <Results />
           </div>
-          <Results />
         </div>
+
         <div className={styles.youGet}>
-          <div className={styles.resultsToYouGet}>
+          <div className={styles.content}>
+            <YouGet />
           </div>
-          <YouGet />
+          <div className={styles.resultsToYouGet}></div>
         </div>
+
         <div className={styles.practicalApproach}>
-          <div className={styles.youGetToPracticalApproach}>
-          </div>
-          <PracticalApproach />
-          <div className={styles.practicalApproachfooter}>
+          <div className={styles.content}>
+            <PracticalApproach />
           </div>
         </div>
+
         <div className={styles.structure}>
-          <div className={styles.practicalApproachToStructure}>
+          <div className={styles.practicalApproachToStructure}></div>
+          <div className={styles.content}>
+            <Structure />
           </div>
-          <Structure />
+          <div className={styles.structureToParticipationFormat}></div>
         </div>
+
         <div className={styles.participationFormat}>
-          <div className={styles.structureToParticipationFormat}>
+          <div className={styles.content}>
+            <ParticipationFormat />
           </div>
-          <ParticipationFormat />
         </div>
-        <div className={styles.registrationForm}>
-          <div className={styles.participationFormatToRegistrationForm}>
+
+        <div className={styles.reviewsWrapper}>
+          <div className={styles.participationFormatToReviews}></div>
+          <div className={styles.reviewsContent}>
+            <Reviews />
           </div>
-          <RegistrationForm />
-          <div className={styles.registrationFormFooter}>
+                    <div className={styles.reviewsWrapperToRegistrationForm}></div>
+        </div>
+
+        <div id="registration-form" className={styles.registrationForm}>
+          <div className={styles.content}>
+            <RegistrationForm />
           </div>
 
         </div>
+
       </div>
     </>
   );

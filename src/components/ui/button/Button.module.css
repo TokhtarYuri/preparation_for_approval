@@ -10,8 +10,7 @@
   line-height: 33px;
   border-radius: 5px;
   font-stretch: condensed;
-  box-shadow: 3px 3px 0px 0px rgb(0, 39, 98);
-  background: linear-gradient(205deg, rgb(79, 176, 255) -5.285%, rgb(0, 59, 164) 114.651%);
+  box-shadow: 3px 3px 0px 0px rgba(53, 105, 185, 1);
   z-index: 1000;
 }
 
