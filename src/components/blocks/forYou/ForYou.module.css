@@ -13,7 +13,7 @@
   font-stretch: condensed;
 }
 
-h2 {
+.title {
   margin-bottom: 15px;
   font-size: 34px;
   font-weight: 700;

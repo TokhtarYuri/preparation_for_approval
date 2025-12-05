@@ -17,7 +17,8 @@
   --black: #000;
 }
 
-#root {
+/* Стили для контейнера приложения (применяются через layout) */
+.app-container {
   max-width: 768px;
   margin: 0 auto;
   width: 100%;

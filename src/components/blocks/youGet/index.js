@@ -1,6 +1,7 @@
 import styles from "./YouGet.module.css";
 import { YOUGET_CONTENT } from "../../../constants/text";
 import StarSRC from "../../../images/star.svg";
+import { getImageSrc } from "../../../utils/imageHelper";
 
 const YouGet = () => {
   return (
@@ -12,7 +13,7 @@ const YouGet = () => {
           {YOUGET_CONTENT.list.map((item, index) => (
             <div key={index} className={styles.listItem}>
               <div className={styles.iconWrapper}>
-                <img src={StarSRC} alt="star" className={styles.image} />
+                <img src={getImageSrc(StarSRC)} alt="star" className={styles.image} />
               </div>
               <div className={styles.textWrapper}>
                 <p className={styles.itemTitle}>{item.itemTitle}</p>

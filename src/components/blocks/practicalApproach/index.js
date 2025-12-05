@@ -1,5 +1,6 @@
 import styles from "./PracticalApproach.module.css";
 import { PRACTICAL_APPROACH_CONTENT } from "../../../constants/text";
+import { getImageSrc } from "../../../utils/imageHelper";
 
 const PracticalApproach = () => {
   return (
@@ -15,7 +16,7 @@ const PracticalApproach = () => {
           {PRACTICAL_APPROACH_CONTENT.list.map((item, index) => (
             <div key={index} className={styles.listItem}>
               <div className={styles.iconWrapper}>
-                <img src={item.image} alt="icon" className={styles.image} />
+                <img src={getImageSrc(item.image)} alt="icon" className={styles.image} />
               </div>
               <div className={styles.textWrapper}>
                 <p className={styles.itemTitle}><span className="text-secondary">{item.itemTitle}</span></p>

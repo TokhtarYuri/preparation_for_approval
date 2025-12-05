@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./SliderExperts.module.css";
 import { EXPERTS_CONTENT } from "../../../constants/text";
@@ -6,11 +8,12 @@ import Avatar1SRC from "../../../images/avatar-1.png"
 import Avatar2SRC from "../../../images/avatar-2.png"
 import Avatar3SRC from "../../../images/avatar-3.png"
 import ArrowSliderSRC from "../../../images/arrow-slider.svg"
+import { getImageSrc } from "../../../utils/imageHelper";
 
 const expert_1 =
     <div className={styles.itemExpert}>
-        <img src={LogoSRC} alt="Logo" className={styles.logo} />
-        <img src={Avatar1SRC} alt="problems" className={styles.imageAvatar} />
+        <img src={getImageSrc(LogoSRC)} alt="Logo" className={styles.logo} />
+        <img src={getImageSrc(Avatar1SRC)} alt="problems" className={styles.imageAvatar} />
         <h4 className={styles.nameExpert}>{EXPERTS_CONTENT.name_1}</h4>
         <p>{EXPERTS_CONTENT.job_1}</p>
         <div className={styles.line}></div>
@@ -30,8 +33,8 @@ const expert_1 =
 
 const expert_2 =
     <div className={styles.itemExpert}>
-        <img src={LogoSRC} alt="Logo" className={styles.logo} />
-        <img src={Avatar2SRC} alt="problems" className={styles.imageAvatar} />
+        <img src={getImageSrc(LogoSRC)} alt="Logo" className={styles.logo} />
+        <img src={getImageSrc(Avatar2SRC)} alt="problems" className={styles.imageAvatar} />
         <h4 className={styles.nameExpert}>{EXPERTS_CONTENT.name_2}</h4>
         <p>{EXPERTS_CONTENT.job_2}</p>
         <div className={styles.line}></div>
@@ -51,8 +54,8 @@ const expert_2 =
 
 const expert_3 =
     <div className={styles.itemExpert}>
-        <img src={LogoSRC} alt="Logo" className={styles.logo} />
-        <img src={Avatar3SRC} alt="problems" className={styles.imageAvatar} />
+        <img src={getImageSrc(LogoSRC)} alt="Logo" className={styles.logo} />
+        <img src={getImageSrc(Avatar3SRC)} alt="problems" className={styles.imageAvatar} />
         <h4 className={styles.nameExpert}>{EXPERTS_CONTENT.name_3}</h4>
         <p>{EXPERTS_CONTENT.job_3}</p>
         <div className={styles.line}></div>
@@ -160,7 +163,7 @@ const SliderExperts = () => {
                 </div>
 
                 <div className={styles.arrow} onClick={prevSlide}></div>
-                <img src={ArrowSliderSRC} alt="" onClick={prevSlide} />
+                <img src={getImageSrc(ArrowSliderSRC)} alt="" onClick={prevSlide} />
 
             </div>
         </div>

@@ -2,6 +2,7 @@ import styles from "./ParticipationFormat.module.css";
 import { PARTICIPATION_FORMAT_CONTENT } from "../../../constants/text";
 import CrossSRC from "../../../images/cross.svg";
 import CheckmarkSRC from "../../../images/checkmark.svg";
+import { getImageSrc } from "../../../utils/imageHelper";
 
 const PlanCard = ({ plan }) => (
   <div className={styles.planCard}>
@@ -14,9 +15,9 @@ const PlanCard = ({ plan }) => (
         <div key={idx} className={styles.listItem}>
           <div className={styles.icon}>
             {item.value ? (
-              <img src={CheckmarkSRC} alt="checkmark" />
+              <img src={getImageSrc(CheckmarkSRC)} alt="checkmark" />
             ) : (
-              <img src={CrossSRC} alt="cross" />
+              <img src={getImageSrc(CrossSRC)} alt="cross" />
             )}
           </div>
           <div className={styles.term}>

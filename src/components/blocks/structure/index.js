@@ -1,6 +1,7 @@
 import styles from "./Structure.module.css";
 import { STRUCTURE_CONTENT } from "../../../constants/text";
 import PlusSRC from "../../../images/plus.svg";
+import { getImageSrc } from "../../../utils/imageHelper";
 
 const Structure = () => {
   return (
@@ -19,14 +20,13 @@ const Structure = () => {
                   <p>{item.moduleTitle}</p>
                 </div>
                 <div className={styles.plusButton}>
-                  <img src={PlusSRC} alt="plus" />
+                  <img src={getImageSrc(PlusSRC)} alt="plus" />
                 </div>
               </div>
               <div className={styles.line}></div>
-              {console.log(item.moduleImage) }
               {item.moduleImage && (
                 <div className={styles.imageContainer}>
-                  <img src={item.moduleImage} alt="module" className={styles.moduleImage} />
+                  <img src={getImageSrc(item.moduleImage)} alt="module" className={styles.moduleImage} />
                 </div>
               )}
             </div>

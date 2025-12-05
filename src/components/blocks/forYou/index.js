@@ -4,6 +4,7 @@ import ForYou1SRC from "../../../images/for-you-1.png";
 import ForYou2SRC from "../../../images/for-you-2.png";
 import ForYou3SRC from "../../../images/for-you-3.png";
 import ForYou4SRC from "../../../images/for-you-4.png";
+import { getImageSrc } from "../../../utils/imageHelper";
 
 const itemsData = [
   { img: ForYou1SRC, title: FORYOU_CONTENT.item_1, text: FORYOU_CONTENT.item_11 },
@@ -16,14 +17,14 @@ const ForYou = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <h2><span className="text-secondary">{FORYOU_CONTENT.title_1}</span></h2>
-        <h2>{FORYOU_CONTENT.title_2}</h2>
+        <h2 className={styles.title}><span className="text-secondary">{FORYOU_CONTENT.title_1}</span></h2>
+        <h2 className={styles.title}>{FORYOU_CONTENT.title_2}</h2>
 
         <div className={styles.items}>
           {itemsData.map((item, index) => (
             <div key={index} className={styles.item}>
               <div className={styles.itemImage}>
-                <img src={item.img} alt="for-you" className={styles.imageForYou} />
+                <img src={getImageSrc(item.img)} alt="for-you" className={styles.imageForYou} />
               </div>
               <div className={styles.itemText}>
                 <p>

@@ -1,8 +1,11 @@
+'use client';
+
 import styles from "./StagesOfApproval.module.css";
 import { STAGES_CONTENT } from "../../../constants/text";
 import StagesOfApprovalItem from "../../ui/StagesOfApprovalItem";
 import Button from "../../ui/button";
 import TooltipArrowSRC from "../../../images/tooltip-arrow.svg";
+import { getImageSrc } from "../../../utils/imageHelper";
 
 const StagesOfApproval = () => {
 
@@ -45,7 +48,7 @@ const StagesOfApproval = () => {
 
       <div className={styles.tooltip}>
         <div className={styles.tooltipIcon}>
-          <img src={TooltipArrowSRC} alt="tooltip" />
+          <img src={getImageSrc(TooltipArrowSRC)} alt="tooltip" />
           <p>
             <span className={styles.blueText}>{STAGES_CONTENT.tooltip_1}</span>
           </p>

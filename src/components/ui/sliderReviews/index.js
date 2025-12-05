@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./SliderReviews.module.css";
 import { REVIEWS_CONTENT } from "../../../constants/text";

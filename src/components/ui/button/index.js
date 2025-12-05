@@ -1,3 +1,5 @@
+'use client';
+
 import styles from "./Button.module.css";
 
 const Button = ({ children, onClick, type = "button", className = "" }) => {
